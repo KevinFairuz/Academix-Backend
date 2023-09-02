@@ -3,11 +3,11 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "Berry Abdulghani",
-    "email":"berry@gmail.com",
+    "name": "Taufiq",
+    "email":"taufiq@gmail.com",
     "password": "123456",
     "confPassword": "123456",
-    "role" : "user"
+    "role" : "admin"
 }
 
 ### 
@@ -17,7 +17,7 @@ GET http://localhost:5000/users
 
 ###
 // Get Single User
-GET http://localhost:5000/users/3c3c6a1b-2110-4ca4-9001-b1e6c56d2c75
+GET http://localhost:5000/users/1aae67a7-af1b-4c15-86e2-bc873d95ef74
 
 ###
 // Update User
