@@ -1,0 +1,63 @@
+// Create a User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Berry Abdulghani",
+    "email":"berry@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role" : "user"
+}
+
+### 
+// get All Users
+GET http://localhost:5000/users
+
+
+###
+// Get Single User
+GET http://localhost:5000/users/3c3c6a1b-2110-4ca4-9001-b1e6c56d2c75
+
+###
+// Update User
+PATCH  http://localhost:5000/users/3c3c6a1b-2110-4ca4-9001-b1e6c56d2c75
+Content-Type: application/json
+
+{
+    "name": "Berry Abdulghani update",
+    "email":"berry@gmail.com",
+    "password": "123",
+    "confPassword": "123",
+    "role" : "user"
+}
+
+###
+// Delete a User
+DELETE   http://localhost:5000/users/819b4c5d-f624-4a67-a0ac-25525ae0e564
+
+###
+// Login User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+      "email": "admin@gmail.com",
+      "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+      "email": "berry@gmail.com",
+      "password": "123456"
+}
+
+###
+// Mengecek Siapa Yang Login
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
